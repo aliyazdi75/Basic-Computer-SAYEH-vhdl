@@ -1,1 +1,5 @@
+vhdl work "aliHalfAdder.vhd"
+vhdl work "aliFullAdder.vhd"
+vhdl work "ali4BFA.vhd"
+vhdl work "ali16BFA.vhd"
 vhdl work "alu.vhd"

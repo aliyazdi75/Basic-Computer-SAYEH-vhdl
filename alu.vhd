@@ -49,8 +49,9 @@ component ali16BFA is
 end component;
 	signal alu_and, alu_or, alu_src, alu_slc, alu_cmp, alu_xor, alu_add, alu_sub : STD_LOGIC_VECTOR (15 downto 0);  
 begin
-
-
+	
+	
+	adder: ali16BFA port map(a,b,cin,cout,alu_add);
 
 end Behavioral;
 
