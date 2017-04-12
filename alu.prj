@@ -1,5 +1,8 @@
 vhdl work "aliHalfAdder.vhd"
+vhdl work "comprator1Bit.vhd"
 vhdl work "aliFullAdder.vhd"
+vhdl work "compratorNBits.vhd"
 vhdl work "ali4BFA.vhd"
+vhdl work "comprator16Bits.vhd"
 vhdl work "ali16BFA.vhd"
 vhdl work "alu.vhd"
