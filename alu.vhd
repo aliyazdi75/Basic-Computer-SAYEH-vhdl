@@ -72,5 +72,7 @@ begin
 	sub: ali16BFA port map(a,not(b),cin,cout_sub,alu_sub);
 	cmp: comprator16Bits port map(a,b,'0','1','0',alu_cmp_lt,alu_cmp_eq,alu_cmp_gt);
 	
+	
+	
 end Behavioral;
 
