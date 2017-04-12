@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    17:53:29 04/12/2017 
+-- Create Date:    15:20:59 02/25/2017 
 -- Design Name: 
--- Module Name:    alu - Behavioral 
+-- Module Name:    ali4BFA - Behavioral 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
@@ -29,28 +29,29 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity alu is
-    Port ( a : in  STD_LOGIC_VECTOR (15 downto 0);
-           b : in  STD_LOGIC_VECTOR (15 downto 0);
+entity ali4BFA is
+    Port ( a : in  STD_LOGIC_VECTOR (3 downto 0);
+           b : in  STD_LOGIC_VECTOR (3 downto 0);
            cin : in  STD_LOGIC;
-           opr : in  STD_LOGIC_VECTOR (3 downto 0);
            cout : out  STD_LOGIC;
-           alu_out : out  STD_LOGIC_VECTOR (15 downto 0);
-           zout : out  STD_LOGIC);
-end alu;
+           s : out  STD_LOGIC_VECTOR (3 downto 0));
+end ali4BFA;
 
-architecture Behavioral of alu is
-component ali16BFA is
-   Port ( a : in  STD_LOGIC_VECTOR (15 downto 0);
-           b : in  STD_LOGIC_VECTOR (15 downto 0);
-           cin : in  STD_LOGIC;
+architecture Behavioral of ali4BFA is
+component aliFullAdder
+	 Port ( a : in  STD_LOGIC;
+           b : in  STD_LOGIC;
+           cin  : in  STD_LOGIC;
            cout : out  STD_LOGIC;
-           s : out  STD_LOGIC_VECTOR (15 downto 0));
+           s : out  STD_LOGIC);
 end component;
-	signal alu_and, alu_or, alu_src, alu_slc, alu_cmp, alu_xor, alu_add, alu_sub : STD_LOGIC_VECTOR (15 downto 0);  
+signal c1, c2, c3 : STD_LOGIC;			  
 begin
-
-
+	
+	p1 : aliFullAdder port map ( a(0),b(0),cin,c1,s(0));
+	p2 : aliFullAdder port map ( a(1),b(1),c1,c2,s(1));
+	p3 : aliFullAdder port map ( a(2),b(2),c2,c3,s(2));
+	p4 : aliFullAdder port map ( a(3),b(3),c3,cout,s(3));
 
 end Behavioral;
 
