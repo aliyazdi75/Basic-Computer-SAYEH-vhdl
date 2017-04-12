@@ -34,6 +34,17 @@ entity alu is
            b : in  STD_LOGIC_VECTOR (15 downto 0);
            cin : in  STD_LOGIC;
            opr : in  STD_LOGIC_VECTOR (3 downto 0);
+           b15to0 : in  STD_LOGIC;
+           aandb : in  STD_LOGIC;
+           aorb : in  STD_LOGIC;
+           axorb : in  STD_LOGIC;
+           notb : in  STD_LOGIC;
+           aaddb : in  STD_LOGIC;
+           asubb : in  STD_LOGIC;
+           amulb : in  STD_LOGIC;
+           acmpb : in  STD_LOGIC;
+           shrb : in  STD_LOGIC;
+           shlb : in  STD_LOGIC;
            cout : out  STD_LOGIC;
            alu_out : out  STD_LOGIC_VECTOR (15 downto 0);
            zout : out  STD_LOGIC);
@@ -72,6 +83,26 @@ begin
 	sub: ali16BFA port map(a,not(b),cin,cout_sub,alu_sub);
 	cmp: comprator16Bits port map(a,b,'0','1','0',alu_cmp_lt,alu_cmp_eq,alu_cmp_gt);
 	
+	if(aandb='1')then
+		alu_out<=alu_and;
+	else if(aorb='1')then
+		alu_out<=alu_or;
+	else if(axorb='1')then
+		alu_out<=alu_xor;
+	else if(aaddb='1')then
+		alu_out<=alu_add;
+	else if(asubb='1')then
+		alu_out<=alu_sub;
+	else if(amulb='1')then
+		--alu_out<=alu_sub;
+	else if(acmpb='1')then
+		--alu_out<=alu_sub;
+	else if(shrb='1')then
+		--alu_out<=alu_sub;
+	else if(shlb='1')then
+		--alu_out<=alu_sub;
+	else if(b15to0='1')then
+		--alu_out<=alu_sub;
 	
 	
 end Behavioral;

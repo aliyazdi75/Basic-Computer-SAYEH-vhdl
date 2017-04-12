@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-04-12T18:22:36</DateModified>
+  <DateModified>2017-04-12T21:52:37</DateModified>
   <ModuleName>alu</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>D:/Ali Yazdi/Documents/GitHub/Architecture_Project/iseconfig/alu.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/Ali Yazdi/Documents/GitHub/Architecture_Project</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/Ali Yazdi/Documents/GitHub/Architecture_Project\</ImplementationReportsDirectory>
   <DateInitialized>2017-04-12T18:22:36</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
