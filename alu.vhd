@@ -83,26 +83,30 @@ begin
 	sub: ali16BFA port map(a,not(b),cin,cout_sub,alu_sub);
 	cmp: comprator16Bits port map(a,b,'0','1','0',alu_cmp_lt,alu_cmp_eq,alu_cmp_gt);
 	
-	if(aandb='1')then
-		alu_out<=alu_and;
-	else if(aorb='1')then
-		alu_out<=alu_or;
-	else if(axorb='1')then
-		alu_out<=alu_xor;
-	else if(aaddb='1')then
-		alu_out<=alu_add;
-	else if(asubb='1')then
-		alu_out<=alu_sub;
-	else if(amulb='1')then
-		--alu_out<=alu_sub;
-	else if(acmpb='1')then
-		--alu_out<=alu_sub;
-	else if(shrb='1')then
-		--alu_out<=alu_sub;
-	else if(shlb='1')then
-		--alu_out<=alu_sub;
-	else if(b15to0='1')then
-		--alu_out<=alu_sub;
+	SEQ: process(aandb,aorb,axorb,aaddb,asubb,amulb,acmpb,shrb,shlb,b15to0)
+	  begin
+		if(aandb='1')then
+			alu_out<=alu_and;
+		elsif(aorb='1')then
+			alu_out<=alu_or;
+		elsif(axorb='1')then
+			alu_out<=alu_xor;
+		elsif(aaddb='1')then
+			alu_out<=alu_add;
+		elsif(asubb='1')then
+			alu_out<=alu_sub;
+		elsif(amulb='1')then
+			--alu_out<=alu_sub;
+		elsif(acmpb='1')then
+			--alu_out<=alu_sub;
+		elsif(shrb='1')then
+			--alu_out<=alu_sub;
+		elsif(shlb='1')then
+			--alu_out<=alu_sub;
+		elsif(b15to0='1')then
+			--alu_out<=alu_sub;
+		end if;
+   end process;
 	
 	
 end Behavioral;
