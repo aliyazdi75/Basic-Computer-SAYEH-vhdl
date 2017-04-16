@@ -33,6 +33,7 @@ entity alu is
     Port ( a : in  STD_LOGIC_VECTOR (15 downto 0);
            b : in  STD_LOGIC_VECTOR (15 downto 0);
            cin : in  STD_LOGIC;
+           zin : in  STD_LOGIC;
            opr : in  STD_LOGIC_VECTOR (3 downto 0);
            b15to0 : in  STD_LOGIC;
            aandb : in  STD_LOGIC;
@@ -87,23 +88,32 @@ begin
 	  begin
 		if(aandb='1')then
 			alu_out<=alu_and;
-		elsif(aorb='1')then
+		end if;
+		if(aorb='1')then
 			alu_out<=alu_or;
-		elsif(axorb='1')then
+		end if;
+		if(axorb='1')then
 			alu_out<=alu_xor;
-		elsif(aaddb='1')then
+		end if;
+		if(aaddb='1')then
 			alu_out<=alu_add;
-		elsif(asubb='1')then
+		end if;
+		if(asubb='1')then
 			alu_out<=alu_sub;
-		elsif(amulb='1')then
+		end if;
+		if(amulb='1')then
 			--alu_out<=alu_sub;
-		elsif(acmpb='1')then
+		end if;
+		if(acmpb='1')then
 			--alu_out<=alu_sub;
-		elsif(shrb='1')then
+		end if;
+		if(shrb='1')then
 			--alu_out<=alu_sub;
-		elsif(shlb='1')then
+		end if;
+		if(shlb='1')then
 			--alu_out<=alu_sub;
-		elsif(b15to0='1')then
+		end if;
+		if(b15to0='1')then
 			--alu_out<=alu_sub;
 		end if;
    end process;

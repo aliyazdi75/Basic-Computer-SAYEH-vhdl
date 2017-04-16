@@ -67,11 +67,9 @@ begin
 			end if;
 			if rfh_write = '1' and rfl_write = '0' then
 				tmpreg(15 downto 8):= databus_inp( 7 downto 0);
-
 			end if;
 			if rfh_write = '1' and rfl_write = '1' then
 				tmpreg(15 downto 0):= databus_inp( 15 downto 0);
-			
 			end if;
 			regf(to_integer(unsigned(ladrs)))<= tmpreg;
       end if;

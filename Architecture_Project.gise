@@ -29,6 +29,9 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="alu.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="alu.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="alu.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="flags.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="flags.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="flags.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ir.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ir.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="ir.xst"/>
