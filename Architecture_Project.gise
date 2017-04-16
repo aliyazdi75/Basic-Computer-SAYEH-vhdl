@@ -26,6 +26,15 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="alu.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="alu.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="alu.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ir.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ir.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="ir.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pc.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="pc.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="pc.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="wp.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="wp.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="wp.xst"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 

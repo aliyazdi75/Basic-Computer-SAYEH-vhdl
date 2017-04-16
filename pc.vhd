@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    19:05:07 04/16/2017 
+-- Create Date:    19:06:49 04/16/2017 
 -- Design Name: 
--- Module Name:    ir - Behavioral 
+-- Module Name:    pc - Behavioral 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
@@ -29,21 +29,21 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity ir is
-    Port ( ir_inp : in  STD_LOGIC_VECTOR (15 downto 0);
-           ir_load : in  STD_LOGIC;
+entity pc is
+    Port ( pc_inp : in  STD_LOGIC_VECTOR (15 downto 0);
+           pc_load : in  STD_LOGIC;
            clk : in  STD_LOGIC;
-           ir_out : out  STD_LOGIC_VECTOR (15 downto 0));
-end ir;
+           pc_out : out  STD_LOGIC_VECTOR (15 downto 0));
+end pc;
 
-architecture Behavioral of ir is
+architecture Behavioral of pc is
 
 begin
-
+	
 	SEQ: process(clk)
    begin
-      if (rising_edge(clk) and ir_load='1') then
-         ir_out <= ir_inp;
+      if (rising_edge(clk) and pc_load='1') then
+         pc_out <= pc_inp;
       end if;
    end process;
 

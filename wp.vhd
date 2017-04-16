@@ -19,6 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.numeric_std.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -38,9 +39,18 @@ entity wp is
 end wp;
 
 architecture Behavioral of wp is
-
+	signal add : STD_LOGIC_VECTOR (5 downto 0);
 begin
-
-
+	
+	SEQ: process(clk,wpreset)
+   begin
+      if (wpreset='1') then
+         wp_out <= "0000";
+      elsif (rising_edge(clk) and wpadd='1') then
+         add <= std_logic_vector(unsigned(add) + unsigned(ir_out));
+      end if;
+   end process;
+	wp_out <= add;
+	
 end Behavioral;
 
