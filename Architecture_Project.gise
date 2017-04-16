@@ -35,6 +35,9 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pc.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="pc.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="pc.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="register_files.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="register_files.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="register_files.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="wp.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="wp.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="wp.xst"/>
