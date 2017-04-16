@@ -101,23 +101,23 @@ begin
 		if(asubb='1')then
 			alu_out<=alu_sub;
 		end if;
-		if(amulb='1')then
+		--if(amulb='1')then
 			--alu_out<=alu_sub;
-		end if;
+		--end if;
 		if(acmpb='1')then
-			--alu_out<=alu_sub;
+			cout <= alu_cmp_eq;
+			zout <= alu_cmp_lt;
 		end if;
 		if(shrb='1')then
-			--alu_out<=alu_sub;
+			alu_out <= '0' & b(15 downto 1);
 		end if;
 		if(shlb='1')then
-			--alu_out<=alu_sub;
+			alu_out <= b(14 downto 0) & '0';
 		end if;
 		if(b15to0='1')then
-			--alu_out<=alu_sub;
+			alu_out <= b;
 		end if;
    end process;
 	
 	
 end Behavioral;
-
