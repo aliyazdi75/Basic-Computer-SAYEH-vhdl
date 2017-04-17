@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Parameter xsthdpdir set to D:/Ali Yazdi/Documents/GitHub/Architecture_Project/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Reading design: datapath.prj
 
@@ -88,11 +88,11 @@ Parsing architecture <Behavioral> of entity <datapath>.
 
 
 Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.87 secs
+Total CPU time to Xst completion: 6.39 secs
  
 --> 
 
-Total memory usage is 270640 kilobytes
+Total memory usage is 271024 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

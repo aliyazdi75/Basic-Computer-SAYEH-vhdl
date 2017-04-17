@@ -1,0 +1,2 @@
+ISim log file
+Running: D:\Ali Yazdi\Documents\GitHub\Architecture_Project\datapath_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Ali Yazdi/Documents/GitHub/Architecture_Project/datapath_isim_beh.wdb 

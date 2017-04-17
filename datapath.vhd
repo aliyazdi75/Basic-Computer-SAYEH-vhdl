@@ -179,8 +179,8 @@ begin
 			mflags : flags port map(co,zo,cset,creset,zset,zreset,sr_load,clk,cin,zin);
 			mir : ir port map(databus,ir_load,clk,ir_out);
 			mpc : pc port map(pc_inp,pc_load,clk,pc_out);
-			mregister_files : register_files port map(databus_inp,wp_out,ir_reg,rfl_write,rfh_write,clk,a,b);
 			mwp : wp port map(ir_out(5 downto 0),wpadd,wpreset,clk,wp_out);
+			mregister_files : register_files port map(databus_inp,wp_out,ir_reg,rfl_write,rfh_write,clk,a,b);
 			
 
 end Behavioral;

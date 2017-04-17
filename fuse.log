@@ -20,5 +20,28 @@ WARNING:HDLCompiler:946 - "D:/Ali Yazdi/Documents/GitHub/Architecture_Project/al
 Parsing VHDL file "D:/Ali Yazdi/Documents/GitHub/Architecture_Project/address_logic.vhd" into library work
 Parsing VHDL file "D:/Ali Yazdi/Documents/GitHub/Architecture_Project/datapath.vhd" into library work
 Starting static elaboration
-ERROR:HDLCompiler:410 - "D:/Ali Yazdi/Documents/GitHub/Architecture_Project/wp.vhd" Line 48: Expression has 4 elements ; expected 6
-ERROR:Simulator:777 - Static elaboration of top level VHDL design unit datapath in library work failed
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity address_logic [address_logic_default]
+Compiling architecture behavioral of entity aliHalfAdder [alihalfadder_default]
+Compiling architecture behavioral of entity aliFullAdder [alifulladder_default]
+Compiling architecture behavioral of entity ali4BFA [ali4bfa_default]
+Compiling architecture behavioral of entity ali16BFA [ali16bfa_default]
+Compiling architecture behavioral of entity comprator1Bit [comprator1bit_default]
+Compiling architecture behavioral of entity compratorNBits [\compratorNBits(16)\]
+Compiling architecture behavioral of entity comprator16Bits [comprator16bits_default]
+Compiling architecture behavioral of entity alu [alu_default]
+Compiling architecture behavioral of entity flags [flags_default]
+Compiling architecture behavioral of entity ir [ir_default]
+Compiling architecture behavioral of entity pc [pc_default]
+Compiling architecture behavioral of entity wp [wp_default]
+Compiling architecture behavioral of entity register_files [register_files_default]
+Compiling architecture behavioral of entity datapath
+Time Resolution for simulation is 1ps.
+Waiting for 10 sub-compilation(s) to finish...
+Compiled 32 VHDL Units
+Built simulation executable D:/Ali Yazdi/Documents/GitHub/Architecture_Project/datapath_isim_beh.exe
+Fuse Memory Usage: 35668 KB
+Fuse CPU Usage: 733 ms

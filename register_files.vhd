@@ -45,7 +45,7 @@ architecture Behavioral of register_files is
 	type reg_files is array (0 to 63) of std_logic_vector(15 downto 0);
 	signal regf : reg_files;
 	signal lir, rir : STD_LOGIC_VECTOR (1 downto 0);
-	signal ladrs, radrs : STD_LOGIC_VECTOR (15 downto 0);
+	signal ladrs, radrs : STD_LOGIC_VECTOR (5 downto 0);
 begin
 	
 	lir <= ir_out (3 downto 2);
