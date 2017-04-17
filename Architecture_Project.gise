@@ -35,6 +35,9 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ir.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ir.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="ir.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="memory.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="memory.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="memory.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pc.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="pc.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="pc.xst"/>
