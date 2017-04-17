@@ -30,7 +30,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity datapath is
-    Port ( shadow : in  STD_LOGIC_VECTOR (1 downto 0);
+    Port ( shadow : in  STD_LOGIC;
 			  reset_pc : in  STD_LOGIC;
            pc_plus1 : in  STD_LOGIC;
            pc_plusi : in  STD_LOGIC;
@@ -55,7 +55,6 @@ entity datapath is
            sr_load : in  STD_LOGIC;
            ir_load : in  STD_LOGIC;
            pc_load : in  STD_LOGIC;
-           ir_out : in  STD_LOGIC_VECTOR (3 downto 0);
            rfl_write : in  STD_LOGIC;
            rfh_write : in  STD_LOGIC;
            wpadd : in  STD_LOGIC;
@@ -87,7 +86,6 @@ component alu is
            b : in  STD_LOGIC_VECTOR (15 downto 0);
            cin : in  STD_LOGIC;
            zin : in  STD_LOGIC;
-           opr : in  STD_LOGIC_VECTOR (3 downto 0);
            b15to0 : in  STD_LOGIC;
            aandb : in  STD_LOGIC;
            aorb : in  STD_LOGIC;
@@ -144,43 +142,45 @@ component wp
            clk : in  STD_LOGIC;
            wp_out : out  STD_LOGIC_VECTOR (5 downto 0));
 end component;
-signal cin,zin,cout,zout : STD_LOGIC;
+signal cin,zin,co,zo: STD_LOGIC;
 signal ir_reg : STD_LOGIC_VECTOR (3 downto 0);
 signal wp_out : STD_LOGIC_VECTOR (5 downto 0);
-signal rside,pc_out,a,b,alu_on_databus,ir_inp,ir_out,pc_inp,databus_inp : STD_LOGIC_VECTOR (15 downto 0);
+signal rside,pc_out,a,b,alu_on_databus,ir_out,pc_inp,databus_inp : STD_LOGIC_VECTOR (15 downto 0);
 begin
 
 	SEQ: process(clk)
    begin
-      if rising_edge(clk)
-		
-			pc_inp <= adrs_to_mem;
+      if rising_edge(clk) then
+			adrs_to_mem <= pc_inp;
 			databus_inp <= databus;
-			if shadow='0' then
+			cout <= co;
+			zout <= zo;
+			if shadow = '0' then
 				ir_reg <= ir_out(11 downto 8);
-			elsif shadow='1' then
+			else
 				ir_reg <= ir_out(3 downto 0);
 			end if;
 			if alu_out_on_databus='1' then
 				databus <= alu_on_databus;
 			elsif adrs_on_daabus='1' then
-				databus <= adrs_to_mem;
+				databus <= pc_inp;
 			end if;
 			if rd_on_adrs='1' then
 				rside <= a;
 			elsif rs_on_adrs='1' then
 				rside <= b;
 			end if;
-			
-			adrs_logic : address_logic port map(pc_out,ir_out(7 downto 0),rside,reset_pc,
-																	pc_plus1,pc_plusi,r0_plusi,r0_plus0,adrs_to_mem);
-			alu : alu port map(a,b,cin,zin,b15to0,aorb,axorb,notb,aaddb,asubb,amulb,acmpb,shrb,shlb,cout,alu_on_databus,zout);
-			flag : flags port map(cout,zout,cset,creset,zset,zreset,sr_load,clk,cin,zin);
-			ir : ir port map(ir_inp,ir_load,clk,ir_out);
-			pc : pc port map(pc_inp,pc_load,clk,pc_out);
-			reg_file : register_files port map(databus_inp,wp_out,ir_reg,rfl_write,rfh_write,clk,a,b);
-			
 		end if;
+	end process;
+	
+			maddress_logic : address_logic port map(pc_out,ir_out(7 downto 0),rside,reset_pc,
+																	pc_plus1,pc_plusi,r0_plusi,r0_plus0,pc_inp);
+			malu : alu port map(a,b,cin,zin,b15to0,aandb,aorb,axorb,notb,aaddb,asubb,amulb,acmpb,shrb,shlb,co,alu_on_databus,zo);
+			mflags : flags port map(co,zo,cset,creset,zset,zreset,sr_load,clk,cin,zin);
+			mir : ir port map(databus,ir_load,clk,ir_out);
+			mpc : pc port map(pc_inp,pc_load,clk,pc_out);
+			mregister_files : register_files port map(databus_inp,wp_out,ir_reg,rfl_write,rfh_write,clk,a,b);
+			mwp : wp port map(ir_out(5 downto 0),wpadd,wpreset,clk,wp_out);
 			
 
 end Behavioral;

@@ -29,6 +29,9 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="alu.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="alu.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="alu.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="datapath.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="datapath.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="datapath.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="flags.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="flags.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="flags.xst"/>
@@ -50,6 +53,68 @@
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1492439613" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1492439613">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1492439613" xil_pn:in_ck="7908480107716054255" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1492439613">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="address_logic.vhd"/>
+      <outfile xil_pn:name="ali16BFA.vhd"/>
+      <outfile xil_pn:name="ali4BFA.vhd"/>
+      <outfile xil_pn:name="aliFullAdder.vhd"/>
+      <outfile xil_pn:name="aliHalfAdder.vhd"/>
+      <outfile xil_pn:name="alu.vhd"/>
+      <outfile xil_pn:name="comprator16Bits.vhd"/>
+      <outfile xil_pn:name="comprator1Bit.vhd"/>
+      <outfile xil_pn:name="compratorNBits.vhd"/>
+      <outfile xil_pn:name="datapath.vhd"/>
+      <outfile xil_pn:name="flags.vhd"/>
+      <outfile xil_pn:name="ir.vhd"/>
+      <outfile xil_pn:name="memory.vhd"/>
+      <outfile xil_pn:name="pc.vhd"/>
+      <outfile xil_pn:name="register_files.vhd"/>
+      <outfile xil_pn:name="wp.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1492439613" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4809020290234410068" xil_pn:start_ts="1492439613">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1492439613" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="12525714420403314" xil_pn:start_ts="1492439613">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1492439613" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-6130878061829670278" xil_pn:start_ts="1492439613">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1492439613" xil_pn:in_ck="7908480107716054255" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1492439613">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="address_logic.vhd"/>
+      <outfile xil_pn:name="ali16BFA.vhd"/>
+      <outfile xil_pn:name="ali4BFA.vhd"/>
+      <outfile xil_pn:name="aliFullAdder.vhd"/>
+      <outfile xil_pn:name="aliHalfAdder.vhd"/>
+      <outfile xil_pn:name="alu.vhd"/>
+      <outfile xil_pn:name="comprator16Bits.vhd"/>
+      <outfile xil_pn:name="comprator1Bit.vhd"/>
+      <outfile xil_pn:name="compratorNBits.vhd"/>
+      <outfile xil_pn:name="datapath.vhd"/>
+      <outfile xil_pn:name="flags.vhd"/>
+      <outfile xil_pn:name="ir.vhd"/>
+      <outfile xil_pn:name="memory.vhd"/>
+      <outfile xil_pn:name="pc.vhd"/>
+      <outfile xil_pn:name="register_files.vhd"/>
+      <outfile xil_pn:name="wp.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1492439616" xil_pn:in_ck="7908480107716054255" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1597866636921135071" xil_pn:start_ts="1492439613">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+  </transforms>
 
 </generated_project>

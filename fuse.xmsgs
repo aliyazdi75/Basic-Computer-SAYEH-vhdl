@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/Ali Yazdi/Documents/GitHub/Architecture_Project/alu.vhd" Line 83: Actual for formal port <arg fmt="%s" index="1">b</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="error" file="HDLCompiler" num="410" delta="unknown" >"D:/Ali Yazdi/Documents/GitHub/Architecture_Project/wp.vhd" Line 48: Expression has <arg fmt="%d" index="1">4</arg> elements ; expected <arg fmt="%d" index="2">6</arg>
+</msg>
+
+<msg type="error" file="Simulator" num="777" delta="unknown" >Static elaboration of top level VHDL design unit <arg fmt="%s" index="1">datapath</arg> in library <arg fmt="%s" index="2">work</arg> failed
+</msg>
+
+</messages>
+

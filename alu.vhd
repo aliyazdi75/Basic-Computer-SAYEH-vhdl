@@ -34,7 +34,6 @@ entity alu is
            b : in  STD_LOGIC_VECTOR (15 downto 0);
            cin : in  STD_LOGIC;
            zin : in  STD_LOGIC;
-           opr : in  STD_LOGIC_VECTOR (3 downto 0);
            b15to0 : in  STD_LOGIC;
            aandb : in  STD_LOGIC;
            aorb : in  STD_LOGIC;
