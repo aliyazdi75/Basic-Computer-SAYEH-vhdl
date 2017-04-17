@@ -30,7 +30,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity datapath is
-    Port ( reset_pc : in  STD_LOGIC;
+    Port ( shadow : in  STD_LOGIC_VECTOR (1 downto 0);
+			  reset_pc : in  STD_LOGIC;
            pc_plus1 : in  STD_LOGIC;
            pc_plusi : in  STD_LOGIC;
            r0_plusi : in  STD_LOGIC;
@@ -46,6 +47,7 @@ entity datapath is
            acmpb : in  STD_LOGIC;
            shrb : in  STD_LOGIC;
            shlb : in  STD_LOGIC;
+			  alu_out_on_databus : in  STD_LOGIC;
            cset : in  STD_LOGIC;
            creset : in  STD_LOGIC;
            zset : in  STD_LOGIC;
@@ -58,8 +60,8 @@ entity datapath is
            rfh_write : in  STD_LOGIC;
            wpadd : in  STD_LOGIC;
            wpreset : in  STD_LOGIC;
-			  adrs_on_daabus : in STD_LOGIC_VECTOR (15 downto 0);
-			  rs_on_adrs : in  STD_LOGIC;
+			  adrs_on_daabus : in STD_LOGIC;
+			  rd_on_adrs : in  STD_LOGIC;
 			  rs_on_adrs : in  STD_LOGIC;
 			  cout : out  STD_LOGIC;
 			  zout : out  STD_LOGIC;
@@ -142,18 +144,44 @@ component wp
            clk : in  STD_LOGIC;
            wp_out : out  STD_LOGIC_VECTOR (5 downto 0));
 end component;
-signal pc_out,ir_out : STD_LOGIC;
-signal  : STD_LOGIC_VECTOR (15 downto 0);
+signal cin,zin,cout,zout : STD_LOGIC;
+signal ir_reg : STD_LOGIC_VECTOR (3 downto 0);
+signal wp_out : STD_LOGIC_VECTOR (5 downto 0);
+signal rside,pc_out,a,b,alu_on_databus,ir_inp,ir_out,pc_inp,databus_inp : STD_LOGIC_VECTOR (15 downto 0);
 begin
 
-	adrs_logic : address_logic port map(pc_out,ir_out,rside,reset_pc,
-															pc_plus1,pc_plusi,r0_plusi,r0_plus0,adrs_to_mem);
-	alu : alu port map();
-	flag : flags port map();
-	ir : ir port map();
-	pc : pc port map();
-	reg_file : register_files port map();
-	wp : wp port map();
+	SEQ: process(clk)
+   begin
+      if rising_edge(clk)
+		
+			pc_inp <= adrs_to_mem;
+			databus_inp <= databus;
+			if shadow='0' then
+				ir_reg <= ir_out(11 downto 8);
+			elsif shadow='1' then
+				ir_reg <= ir_out(3 downto 0);
+			end if;
+			if alu_out_on_databus='1' then
+				databus <= alu_on_databus;
+			elsif adrs_on_daabus='1' then
+				databus <= adrs_to_mem;
+			end if;
+			if rd_on_adrs='1' then
+				rside <= a;
+			elsif rs_on_adrs='1' then
+				rside <= b;
+			end if;
+			
+			adrs_logic : address_logic port map(pc_out,ir_out(7 downto 0),rside,reset_pc,
+																	pc_plus1,pc_plusi,r0_plusi,r0_plus0,adrs_to_mem);
+			alu : alu port map(a,b,cin,zin,b15to0,aorb,axorb,notb,aaddb,asubb,amulb,acmpb,shrb,shlb,cout,alu_on_databus,zout);
+			flag : flags port map(cout,zout,cset,creset,zset,zreset,sr_load,clk,cin,zin);
+			ir : ir port map(ir_inp,ir_load,clk,ir_out);
+			pc : pc port map(pc_inp,pc_load,clk,pc_out);
+			reg_file : register_files port map(databus_inp,wp_out,ir_reg,rfl_write,rfh_write,clk,a,b);
+			
+		end if;
+			
 
 end Behavioral;
 
