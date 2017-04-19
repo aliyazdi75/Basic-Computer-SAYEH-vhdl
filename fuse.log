@@ -1,47 +1,18 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o D:/Ali Yazdi/Documents/GitHub/Architecture_Project/datapath_isim_beh.exe -prj D:/Ali Yazdi/Documents/GitHub/Architecture_Project/datapath_beh.prj work.datapath 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o D:/Ali Yazdi/Documents/GitHub/Architecture_Project/wp_isim_beh.exe -prj D:/Ali Yazdi/Documents/GitHub/Architecture_Project/wp_beh.prj work.wp 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "D:/Ali Yazdi/Documents/GitHub/Architecture_Project/aliHalfAdder.vhd" into library work
-Parsing VHDL file "D:/Ali Yazdi/Documents/GitHub/Architecture_Project/comprator1Bit.vhd" into library work
-Parsing VHDL file "D:/Ali Yazdi/Documents/GitHub/Architecture_Project/aliFullAdder.vhd" into library work
-Parsing VHDL file "D:/Ali Yazdi/Documents/GitHub/Architecture_Project/compratorNBits.vhd" into library work
-Parsing VHDL file "D:/Ali Yazdi/Documents/GitHub/Architecture_Project/ali4BFA.vhd" into library work
-Parsing VHDL file "D:/Ali Yazdi/Documents/GitHub/Architecture_Project/comprator16Bits.vhd" into library work
-Parsing VHDL file "D:/Ali Yazdi/Documents/GitHub/Architecture_Project/ali16BFA.vhd" into library work
 Parsing VHDL file "D:/Ali Yazdi/Documents/GitHub/Architecture_Project/wp.vhd" into library work
-Parsing VHDL file "D:/Ali Yazdi/Documents/GitHub/Architecture_Project/register_files.vhd" into library work
-Parsing VHDL file "D:/Ali Yazdi/Documents/GitHub/Architecture_Project/pc.vhd" into library work
-Parsing VHDL file "D:/Ali Yazdi/Documents/GitHub/Architecture_Project/ir.vhd" into library work
-Parsing VHDL file "D:/Ali Yazdi/Documents/GitHub/Architecture_Project/flags.vhd" into library work
-Parsing VHDL file "D:/Ali Yazdi/Documents/GitHub/Architecture_Project/alu.vhd" into library work
-WARNING:HDLCompiler:946 - "D:/Ali Yazdi/Documents/GitHub/Architecture_Project/alu.vhd" Line 83: Actual for formal port b is neither a static name nor a globally static expression
-Parsing VHDL file "D:/Ali Yazdi/Documents/GitHub/Architecture_Project/address_logic.vhd" into library work
-Parsing VHDL file "D:/Ali Yazdi/Documents/GitHub/Architecture_Project/datapath.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
-Compiling architecture behavioral of entity address_logic [address_logic_default]
-Compiling architecture behavioral of entity aliHalfAdder [alihalfadder_default]
-Compiling architecture behavioral of entity aliFullAdder [alifulladder_default]
-Compiling architecture behavioral of entity ali4BFA [ali4bfa_default]
-Compiling architecture behavioral of entity ali16BFA [ali16bfa_default]
-Compiling architecture behavioral of entity comprator1Bit [comprator1bit_default]
-Compiling architecture behavioral of entity compratorNBits [\compratorNBits(16)\]
-Compiling architecture behavioral of entity comprator16Bits [comprator16bits_default]
-Compiling architecture behavioral of entity alu [alu_default]
-Compiling architecture behavioral of entity flags [flags_default]
-Compiling architecture behavioral of entity ir [ir_default]
-Compiling architecture behavioral of entity pc [pc_default]
-Compiling architecture behavioral of entity wp [wp_default]
-Compiling architecture behavioral of entity register_files [register_files_default]
-Compiling architecture behavioral of entity datapath
+Compiling architecture behavioral of entity wp
 Time Resolution for simulation is 1ps.
-Waiting for 10 sub-compilation(s) to finish...
-Compiled 32 VHDL Units
-Built simulation executable D:/Ali Yazdi/Documents/GitHub/Architecture_Project/datapath_isim_beh.exe
-Fuse Memory Usage: 35668 KB
-Fuse CPU Usage: 733 ms
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 4 VHDL Units
+Built simulation executable D:/Ali Yazdi/Documents/GitHub/Architecture_Project/wp_isim_beh.exe
+Fuse Memory Usage: 35548 KB
+Fuse CPU Usage: 703 ms

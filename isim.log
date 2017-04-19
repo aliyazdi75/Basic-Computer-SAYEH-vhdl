@@ -1,2 +1,17 @@
 ISim log file
-Running: D:\Ali Yazdi\Documents\GitHub\Architecture_Project\datapath_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Ali Yazdi/Documents/GitHub/Architecture_Project/datapath_isim_beh.wdb 
+Running: D:\Ali Yazdi\Documents\GitHub\Architecture_Project\wp_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Ali Yazdi/Documents/GitHub/Architecture_Project/wp_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# isim force add /wp/ir_out 110100 -radix bin
+# isim force add /wp/clk 0 -radix bin -value 1 -radix bin -time 5 ns -repeat 10 ns
+# isim force add /wp/wpreset 1 -radix bin
+# run 100ns
+# isim force add /wp/wpreset 0 -radix bin
+# isim force add /wp/wpadd 1 -radix bin
+# run 100ns

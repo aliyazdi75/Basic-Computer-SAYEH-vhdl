@@ -54,14 +54,11 @@ begin
 		else
 			if(pc_plus1='1')then
 				adrs_out <= std_logic_vector(unsigned(pc_out) + unsigned(one));
-			end if;
-			if(pc_plusi='1')then
+			elsif(pc_plusi='1')then
 				adrs_out <= std_logic_vector(unsigned(pc_out) + unsigned(ir_out));
-			end if;
-			if(r0_plusi='1')then
+			elsif(r0_plusi='1')then
 				adrs_out <= std_logic_vector(unsigned(rside) + unsigned(ir_out));
-			end if;
-			if(r0_plus0='1')then
+			elsif(r0_plus0='1')then
 				adrs_out <= rside;
 			end if;
 		end if;

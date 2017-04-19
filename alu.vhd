@@ -19,6 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use ieee.std_logic_unsigned.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -52,13 +53,6 @@ end alu;
 
 architecture Behavioral of alu is
 
-component ali16BFA is
-   Port ( a : in  STD_LOGIC_VECTOR (15 downto 0);
-           b : in  STD_LOGIC_VECTOR (15 downto 0);
-           cin : in  STD_LOGIC;
-           cout : out  STD_LOGIC;
-           s : out  STD_LOGIC_VECTOR (15 downto 0));
-end component;
 
 component comprator16Bits is
    Port ( a : in  STD_LOGIC_VECTOR (15 downto 0);
@@ -71,49 +65,41 @@ component comprator16Bits is
            gta : out  STD_LOGIC);
 end component comprator16Bits;
 
-	signal alu_and, alu_or, alu_src, alu_slc, alu_cmp, alu_xor, alu_add, alu_sub : STD_LOGIC_VECTOR (15 downto 0);  
+	signal alu_and, alu_or, alu_src, alu_slc, alu_cmp, alu_xor : STD_LOGIC_VECTOR (15 downto 0);  
 	signal cout_add, cout_sub, alu_cmp_eq, alu_cmp_gt, alu_cmp_lt : STD_LOGIC;
+	signal add, sub : STD_LOGIC_VECTOR (16 downto 0);
 	
 begin
 	
 	alu_and <= a and b;
 	alu_or <= a or b;
 	alu_xor <= a xor b;
-	adder: ali16BFA port map(a,b,cin,cout_add,alu_add);
-	sub: ali16BFA port map(a,not(b),cin,cout_sub,alu_sub);
 	cmp: comprator16Bits port map(a,b,'0','1','0',alu_cmp_lt,alu_cmp_eq,alu_cmp_gt);
+   add <= (('0' & a) + ('0' & b) + cin);
+   sub <= (('0' & a) - ('0' & b) + cin);
 	
 	SEQ: process(aandb,aorb,axorb,aaddb,asubb,amulb,acmpb,shrb,shlb,b15to0)
 	  begin
 		if(aandb='1')then
 			alu_out<=alu_and;
-		end if;
-		if(aorb='1')then
+		elsif(aorb='1')then
 			alu_out<=alu_or;
-		end if;
-		if(axorb='1')then
+		elsif(axorb='1')then
 			alu_out<=alu_xor;
-		end if;
-		if(aaddb='1')then
-			alu_out<=alu_add;
-		end if;
-		if(asubb='1')then
-			alu_out<=alu_sub;
-		end if;
-		--if(amulb='1')then
-			--alu_out<=alu_sub;
-		--end if;
-		if(acmpb='1')then
+		elsif(aaddb='1')then
+			alu_out<=add(15 downto 0);
+			cout <= add(16);
+		elsif(asubb='1')then
+			alu_out<=sub(15 downto 0);
+			cout <= sub(16);
+		elsif(acmpb='1')then
 			cout <= alu_cmp_eq;
 			zout <= alu_cmp_lt;
-		end if;
-		if(shrb='1')then
+		elsif(shrb='1')then
 			alu_out <= '0' & b(15 downto 1);
-		end if;
-		if(shlb='1')then
+		elsif(shlb='1')then
 			alu_out <= b(14 downto 0) & '0';
-		end if;
-		if(b15to0='1')then
+		elsif(b15to0='1')then
 			alu_out <= b;
 		end if;
    end process;

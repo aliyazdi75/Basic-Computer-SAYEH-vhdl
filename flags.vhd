@@ -49,21 +49,20 @@ begin
 	SEQ: process(clk)
    begin
       if rising_edge(clk) then
-			if cset = '1' then
-				cin <= '1';
-			end if;
-			if creset = '1' then
-				cin <= '0';
-			end if;
-			if zset = '1' then
-				zin <= '1';
-			end if;
-			if zreset = '1' then
-				zin <= '0';
-			end if;
 			if sr_load = '1' then
 				cin <= cout;
 				zin <= zout;
+				else
+					if cset = '1' then
+						cin <= '1';
+					elsif creset = '1' then
+						cin <= '0';
+					end if;
+					if zset = '1' then
+						zin <= '1';
+					elsif zreset = '1' then
+						zin <= '0';
+					end if;
 			end if;
       end if;
    end process;

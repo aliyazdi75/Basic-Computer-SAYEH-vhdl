@@ -1,0 +1,28 @@
+Command line:
+   wp_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  26953
+
+Wed Apr 19 13:57:31 2017
+
+
+ Elaboration Time: 1.4375 sec
+
+ Current Memory Usage: 1355.5 Meg
+
+ Total Signals          : 6
+ Total Nets             : 21
+ Total Signal Drivers   : 2
+ Total Blocks           : 3
+ Total Primitive Blocks : 3
+ Total Processes        : 1
+ Total Traceable Variables  : 13
+ Total Scalar Nets and Variables : 504
+
+ Total Simulation Time: 1.60938 sec
+
+ Current Memory Usage: 883.601 Meg
+
+Wed Apr 19 13:58:44 2017
+

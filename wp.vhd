@@ -45,11 +45,11 @@ begin
 	SEQ: process(clk,wpreset)
    begin
       if (wpreset='1') then
-         wp_out <= "000000";
+         add <= "000000";
       elsif (rising_edge(clk) and wpadd='1') then
          add <= std_logic_vector(unsigned(add) + unsigned(ir_out));
       end if;
-	wp_out <= add;
+			wp_out <= add;
    end process;
 	
 end Behavioral;

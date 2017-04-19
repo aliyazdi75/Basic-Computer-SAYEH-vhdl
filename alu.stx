@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Parameter xsthdpdir set to D:/Ali Yazdi/Documents/GitHub/Architecture_Project/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Reading design: alu.prj
 
@@ -39,41 +39,28 @@ TABLE OF CONTENTS
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "D:\Ali Yazdi\Documents\GitHub\Architecture_Project\aliHalfAdder.vhd" into library work
-Parsing entity <aliHalfAdder>.
-Parsing architecture <Behavioral> of entity <alihalfadder>.
 Parsing VHDL file "D:\Ali Yazdi\Documents\GitHub\Architecture_Project\comprator1Bit.vhd" into library work
 Parsing entity <comprator1Bit>.
 Parsing architecture <Behavioral> of entity <comprator1bit>.
-Parsing VHDL file "D:\Ali Yazdi\Documents\GitHub\Architecture_Project\aliFullAdder.vhd" into library work
-Parsing entity <aliFullAdder>.
-Parsing architecture <Behavioral> of entity <alifulladder>.
 Parsing VHDL file "D:\Ali Yazdi\Documents\GitHub\Architecture_Project\compratorNBits.vhd" into library work
 Parsing entity <compratorNBits>.
 Parsing architecture <Behavioral> of entity <compratornbits>.
-Parsing VHDL file "D:\Ali Yazdi\Documents\GitHub\Architecture_Project\ali4BFA.vhd" into library work
-Parsing entity <ali4BFA>.
-Parsing architecture <Behavioral> of entity <ali4bfa>.
 Parsing VHDL file "D:\Ali Yazdi\Documents\GitHub\Architecture_Project\comprator16Bits.vhd" into library work
 Parsing entity <comprator16Bits>.
 Parsing architecture <Behavioral> of entity <comprator16bits>.
-Parsing VHDL file "D:\Ali Yazdi\Documents\GitHub\Architecture_Project\ali16BFA.vhd" into library work
-Parsing entity <ali16BFA>.
-Parsing architecture <Behavioral> of entity <ali16bfa>.
 Parsing VHDL file "D:\Ali Yazdi\Documents\GitHub\Architecture_Project\alu.vhd" into library work
 Parsing entity <alu>.
 Parsing architecture <Behavioral> of entity <alu>.
-WARNING:HDLCompiler:946 - "D:\Ali Yazdi\Documents\GitHub\Architecture_Project\alu.vhd" Line 84: Actual for formal port b is neither a static name nor a globally static expression
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 8.00 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.70 secs
  
 --> 
 
-Total memory usage is 268592 kilobytes
+Total memory usage is 270384 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

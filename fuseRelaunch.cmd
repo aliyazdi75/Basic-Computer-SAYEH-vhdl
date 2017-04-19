@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "D:/Ali Yazdi/Documents/GitHub/Architecture_Project/datapath_isim_beh.exe" -prj "D:/Ali Yazdi/Documents/GitHub/Architecture_Project/datapath_beh.prj" "work.datapath" 
+-intstyle "ise" -incremental -lib "secureip" -o "D:/Ali Yazdi/Documents/GitHub/Architecture_Project/wp_isim_beh.exe" -prj "D:/Ali Yazdi/Documents/GitHub/Architecture_Project/wp_beh.prj" "work.wp" 
