@@ -35,13 +35,13 @@ entity controller is
            zout : in  STD_LOGIC;
            cout : in  STD_LOGIC;
            clk : in  STD_LOGIC;
-			  shadow : out STD_LOGIC;
-			  reset_pc : out STD_LOGIC;
+		   shadow : out STD_LOGIC;
+		   reset_pc : out STD_LOGIC;
            pc_plus1 : out STD_LOGIC;
            pc_plusi : out STD_LOGIC;
            r0_plusi : out STD_LOGIC;
            r0_plus0 : out STD_LOGIC;
-			  b15to0 : out STD_LOGIC;
+		   b15to0 : out STD_LOGIC;
            aandb : out STD_LOGIC;
            aorb : out STD_LOGIC;
            axorb : out STD_LOGIC;
@@ -52,7 +52,7 @@ entity controller is
            acmpb : out STD_LOGIC;
            shrb : out STD_LOGIC;
            shlb : out STD_LOGIC;
-			  alu_out_on_databus : out STD_LOGIC;
+		   alu_out_on_databus : out STD_LOGIC;
            cset : out STD_LOGIC;
            creset : out STD_LOGIC;
            zset : out STD_LOGIC;
@@ -64,11 +64,11 @@ entity controller is
            rfh_write : out STD_LOGIC;
            wpadd : out STD_LOGIC;
            wpreset : out STD_LOGIC;
-			  adrs_on_daabus : out STD_LOGIC;
-			  rd_on_adrs : out STD_LOGIC;
-			  rs_on_adrs : out STD_LOGIC;
-			  read_mem : out STD_LOGIC;
-			  write_mem : out STD_LOGIC);
+		   adrs_on_daabus : out STD_LOGIC;
+		   rd_on_adrs : out STD_LOGIC;
+		   rs_on_adrs : out STD_LOGIC;
+		   read_mem : out STD_LOGIC;
+		   write_mem : out STD_LOGIC);
 end controller;
 
 architecture Behavioral of controller is
