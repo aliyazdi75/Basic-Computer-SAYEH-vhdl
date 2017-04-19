@@ -8,6 +8,279 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Ali Yazdi/Documents/GitHub/Architecture_Project/address_logic.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Ali Yazdi/Documents/GitHub/Architecture_Project/alu.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Ali Yazdi/Documents/GitHub/Architecture_Project/comprator16Bits.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Ali Yazdi/Documents/GitHub/Architecture_Project/comprator1Bit.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Ali Yazdi/Documents/GitHub/Architecture_Project/compratorNBits.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">219</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">223</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">225</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">228</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">233</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">236</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">241</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">244</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">249</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">252</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">257</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">260</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">265</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">268</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">271</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">276</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">283</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">286</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">290</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">293</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">297</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">306</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">310</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">314</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">317</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">326</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">329</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">332</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">337</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">344</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">347</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">350</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">355</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">362</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">365</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">368</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">373</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">380</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">383</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">386</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">391</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">398</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">401</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">404</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">409</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">416</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">419</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">422</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">427</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">434</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">437</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">440</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">445</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">452</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">455</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">458</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">463</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">470</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">473</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">478</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">481</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">486</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">489</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">492</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">497</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">504</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">507</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">510</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">515</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">519</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">522</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">524</arg>. <arg fmt="%s" index="3">Syntax error near &quot;if&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">533</arg>. <arg fmt="%s" index="3">Syntax error near &quot;end&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">537</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">539</arg>. <arg fmt="%s" index="3">Syntax error near &quot;if&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">548</arg>. <arg fmt="%s" index="3">Syntax error near &quot;end&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">552</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">555</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd</arg>&quot; Line <arg fmt="%d" index="2">561</arg>. <arg fmt="%s" index="3">Syntax error near &quot;case&quot;.</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Ali Yazdi/Documents/GitHub/Architecture_Project/datapath.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Ali Yazdi/Documents/GitHub/Architecture_Project/flags.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Ali Yazdi/Documents/GitHub/Architecture_Project/ir.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Ali Yazdi/Documents/GitHub/Architecture_Project/memory.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Ali Yazdi/Documents/GitHub/Architecture_Project/pc.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Ali Yazdi/Documents/GitHub/Architecture_Project/register_files.vhd&quot; into library work</arg>
+</msg>
+
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Ali Yazdi/Documents/GitHub/Architecture_Project/wp.vhd&quot; into library work</arg>
 </msg>
 
