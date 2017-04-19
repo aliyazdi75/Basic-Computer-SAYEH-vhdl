@@ -30,8 +30,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity datapath is
-    Port ( shadow : in  STD_LOGIC;
-			  reset_pc : in  STD_LOGIC;
+    Port ( reset_pc : in  STD_LOGIC;
            pc_plus1 : in  STD_LOGIC;
            pc_plusi : in  STD_LOGIC;
            r0_plusi : in  STD_LOGIC;
@@ -155,11 +154,7 @@ begin
 			databus_inp <= databus;
 			cout <= co;
 			zout <= zo;
-			if shadow = '0' then
-				ir_reg <= ir_out(11 downto 8);
-			else
-				ir_reg <= ir_out(3 downto 0);
-			end if;
+			ir_reg <= ir_out(11 downto 8);
 			if alu_out_on_databus='1' then
 				databus <= alu_on_databus;
 			elsif adrs_on_daabus='1' then

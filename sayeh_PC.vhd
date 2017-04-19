@@ -30,22 +30,18 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity sayeh_PC is
-    Port ( ir_out : in  STD_LOGIC_VECTOR (15 downto 0);
-           external_reset : in  STD_LOGIC;
-           zout : in  STD_LOGIC;
-           cout : in  STD_LOGIC;
-           clk : in  STD_LOGIC;
+    Port (external_reset : in  STD_LOGIC;
+          clk : in  STD_LOGIC);
 end sayeh_PC;
 
 architecture Behavioral of sayeh_PC is
 component datapath 
-    Port ( shadow : in  STD_LOGIC;
-		   reset_pc : in  STD_LOGIC;
+    Port ( reset_pc : in  STD_LOGIC;
            pc_plus1 : in  STD_LOGIC;
            pc_plusi : in  STD_LOGIC;
            r0_plusi : in  STD_LOGIC;
            r0_plus0 : in  STD_LOGIC;
-		   b15to0 : in  STD_LOGIC;
+		     b15to0 : in  STD_LOGIC;
            aandb : in  STD_LOGIC;
            aorb : in  STD_LOGIC;
            axorb : in  STD_LOGIC;
@@ -56,7 +52,7 @@ component datapath
            acmpb : in  STD_LOGIC;
            shrb : in  STD_LOGIC;
            shlb : in  STD_LOGIC;
-		   alu_out_on_databus : in  STD_LOGIC;
+		     alu_out_on_databus : in  STD_LOGIC;
            cset : in  STD_LOGIC;
            creset : in  STD_LOGIC;
            zset : in  STD_LOGIC;
@@ -83,7 +79,6 @@ component controller
            zout : in  STD_LOGIC;
            cout : in  STD_LOGIC;
            clk : in  STD_LOGIC;
-			  shadow : out STD_LOGIC;
 			  reset_pc : out STD_LOGIC;
            pc_plus1 : out STD_LOGIC;
            pc_plusi : out STD_LOGIC;
@@ -125,20 +120,19 @@ component memory is
 		databus : inout std_logic_vector (15 downto 0);
 		memdataready : out std_logic);
 end component;
-signal zout,cout,shadow,reset_pc,pc_plus1,pc_plusi,r0_plusi,
-        b15to0,aandb,aorb,axorb,notb,aaddb,asubb,amulb,acmpb,
+signal zout,cout,reset_pc,pc_plus1,pc_plusi,r0_plusi,
+        r0_plus0,b15to0,aandb,aorb,axorb,notb,aaddb,asubb,amulb,acmpb,
         shrb,shlb,alu_out_on_databus,cset,creset,zset,zreset,
         sr_load,ir_load,pc_load,rfl_write,rfh_write,wpadd,
-        wpreset,adrs_on_daabus,rd_on_adrs,rs_on_adrs,read_mem
-        write_mem,adrs_to_mem,databus,memdataready : STD_LOGIC;
-signal ir_out : STD_LOGIC_VECTOR (15 downto 0);
+        wpreset,adrs_on_daabus,rd_on_adrs,rs_on_adrs,read_mem,
+        write_mem,memdataready : STD_LOGIC;
+signal ir_out,adrs_to_mem,databus : STD_LOGIC_VECTOR (15 downto 0);
 begin
 	mcontroller: controller port map(ir_out,
                                     external_reset,
                                     zout,
                                     cout,
                                     clk,
-                                    shadow,
                                     reset_pc,
                                     pc_plus1,
                                     pc_plusi,
@@ -172,8 +166,7 @@ begin
                                     rs_on_adrs,
                                     read_mem,
                                     write_mem);
-    mydatapath: datapath port map(  shadow,
-                                    reset_pc,
+    mydatapath: datapath port map(  reset_pc,
                                     pc_plus1,
                                     pc_plusi,
                                     r0_plusi,
@@ -206,7 +199,7 @@ begin
                                     rs_on_adrs,
                                     cout,
                                     zout,
-                                    adrs_to_mem
+                                    adrs_to_mem,
                                     databus,
                                     clk);
     mymem: memory port map(         clk,

@@ -1,5 +1,5 @@
 ISim log file
-Running: D:\Ali Yazdi\Documents\GitHub\Architecture_Project\wp_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Ali Yazdi/Documents/GitHub/Architecture_Project/wp_isim_beh.wdb 
+Running: D:\Ali Yazdi\Documents\GitHub\Architecture_Project\sayeh_PC_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Ali Yazdi/Documents/GitHub/Architecture_Project/sayeh_PC_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
 Time resolution is 1 ps
@@ -7,11 +7,58 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
+at 0 ps, Instance /sayeh_pc/mydatapath/malu/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /sayeh_pc/mydatapath/malu/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /sayeh_pc/mydatapath/malu/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 Finished circuit initialization process.
-# isim force add /wp/ir_out 110100 -radix bin
-# isim force add /wp/clk 0 -radix bin -value 1 -radix bin -time 5 ns -repeat 10 ns
-# isim force add /wp/wpreset 1 -radix bin
+at 0 ps, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# isim force add /sayeh_pc/external_reset 1 -radix bin
+# isim force add /sayeh_pc/clk 0 -radix bin -value 1 -radix bin -time 5 ns -repeat 10 ns
 # run 100ns
-# isim force add /wp/wpreset 0 -radix bin
-# isim force add /wp/wpadd 1 -radix bin
+at 1005 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1005 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1005 ns, Instance /sayeh_pc/mymem/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1015 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1015 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1025 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1025 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1035 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1035 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1045 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1045 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1055 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1055 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1065 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1065 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1075 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1075 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1085 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1085 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1095 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1095 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# isim force add /sayeh_pc/external_reset 0 -radix bin
+# isim force add /sayeh_pc/aandb 1 -radix bin
 # run 100ns
+at 1105 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1105 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1115 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1115 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1125 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1125 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1135 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1135 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1145 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1145 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1155 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1155 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1165 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1165 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1175 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1175 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1185 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1185 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1195 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 1195 ns, Instance /sayeh_pc/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0

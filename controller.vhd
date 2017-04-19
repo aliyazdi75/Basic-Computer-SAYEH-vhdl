@@ -35,7 +35,6 @@ entity controller is
            zout : in  STD_LOGIC;
            cout : in  STD_LOGIC;
            clk : in  STD_LOGIC;
-		   shadow : out STD_LOGIC;
 		   reset_pc : out STD_LOGIC;
            pc_plus1 : out STD_LOGIC;
            pc_plusi : out STD_LOGIC;
@@ -103,20 +102,19 @@ architecture Behavioral of controller is
 	signal next_state : state;
 begin
 
-	process (clk, reset)
+	process (clk, external_reset)
 	begin
-		if reset = '1' then
+		if external_reset = '1' then
 			current_state <= Sreset;    
 		elsif rising_edge(clk) then
 			current_state <= next_state;
 		end if;
 	end process;
 
-	process (current_state, ir_out)
+	process (current_state, ir_out, zout, cout)
 	begin
 		case current_state is
 		 when Sreset =>
-			shadow <= '0';
 			reset_pc <= '1';
 			pc_plus1 <= '0';
 			pc_plusi <= '0';
@@ -216,6 +214,7 @@ begin
 					next_state <= Sbrc1;
 				elsif ir_out (15 downto 8) = "00001010" then
 					next_state <= Sawp1;
+				end if;
 			when Snop =>
             	pc_plus1 <= '1';
             	pc_load <= '1';
@@ -249,7 +248,7 @@ begin
 			when Sccf1 =>
             	creset <= '1';
 				next_state <= Sccf2;
-			when Sczf2 =>
+			when Sccf2 =>
 				creset <= '0';
             	pc_plus1 <= '1';
             	pc_load <= '1';
@@ -520,8 +519,7 @@ begin
 				pc_plusi <= '0';
 				next_state <= Sfetch1;
 			when Sbrz1 =>
-				process(zin)
-					if zin='1' then
+					if zout='1' then
 						pc_plusi <= '1';
             			pc_load <= '1';
 						next_state <= Sbrz2;
@@ -529,14 +527,12 @@ begin
 						pc_plus1 <= '1';
 						pc_load <= '1';
 						next_state <= Sfetch1;
-					end if
-				end process
+					end if;
 			when Sbrz2 =>
 				pc_plusi <= '0';
 				next_state <= Sfetch1;
 			when Sbrc1 =>
-				process(cin)
-					if cin='1' then
+					if cout='1' then
 						pc_plusi <= '1';
             			pc_load <= '1';
 						next_state <= Sbrc2;
@@ -544,8 +540,7 @@ begin
 						pc_plus1 <= '1';
 						pc_load <= '1';
 						next_state <= Sfetch1;
-					end if
-				end process
+					end if;
 			when Sbrc2 =>
 				pc_plusi <= '0';
 				next_state <= Sfetch1;
