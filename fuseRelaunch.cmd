@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Windows 10/Documents/GitHub/Architecture_Project/rg_tb_isim_beh.exe" -prj "C:/Users/Windows 10/Documents/GitHub/Architecture_Project/rg_tb_beh.prj" "work.rg_tb" 
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Windows 10/Documents/GitHub/Architecture_Project/tc_tb_isim_beh.exe" -prj "C:/Users/Windows 10/Documents/GitHub/Architecture_Project/tc_tb_beh.prj" "work.tc_tb" 

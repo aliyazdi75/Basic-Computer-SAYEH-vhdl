@@ -71,9 +71,16 @@ component random_generator is
            Output : out  STD_LOGIC_VECTOR (15 downto 0));
 end component random_generator;
 
-	signal alu_and, alu_or, alu_src, alu_slc, alu_cmp, alu_xor,alu_rand : STD_LOGIC_VECTOR (15 downto 0);  
+component two_complement is
+    Port ( A : in  STD_LOGIC_VECTOR (15 downto 0);
+           Output : out  STD_LOGIC_VECTOR (15 downto 0));
+end component two_complement;
+
+	signal alu_and, alu_or, alu_src, alu_slc, alu_cmp, alu_xor,alu_rand,alu_comp : STD_LOGIC_VECTOR (15 downto 0);  
 	signal cout_add, cout_sub, alu_cmp_eq, alu_cmp_gt, alu_cmp_lt : STD_LOGIC;
 	signal add, sub : STD_LOGIC_VECTOR (16 downto 0);
+	
+
 	
 begin
 	
@@ -81,8 +88,10 @@ begin
 	alu_or <= a or b;
 	alu_xor <= a xor b;
 	cmp: comprator16Bits port map(a,b,'0','1','0',alu_cmp_lt,alu_cmp_eq,alu_cmp_gt);
-	rand: random_generator port map(a,b,alu_rand); --not connected to alu_out!!!
 	
+	rand: random_generator port map(a,b,alu_rand); --not connected to alu_out!!!
+	complement: two_complement port map(a,alu_comp); --not connected to alu_out!!!
+
 	
    add <= (('0' & a) + ('0' & b) + cin);
    sub <= (('0' & a) - ('0' & b) + cin);
