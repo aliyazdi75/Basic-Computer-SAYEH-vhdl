@@ -2,7 +2,7 @@ set -tmpdir "C:/Users/Windows 10/Documents/GitHub/Architecture_Project/xst/projn
 set -xsthdpdir "C:/Users/Windows 10/Documents/GitHub/Architecture_Project/xst"
 run -compileonly yes
 -p xc7a100t-3-csg324
--top sayeh_PC
+-top random_generator
 -opt_mode Speed
 -opt_level 1
 -power NO
@@ -47,4 +47,4 @@ run -compileonly yes
 -iob Auto
 -equivalent_register_removal YES
 -slice_utilization_ratio_maxmargin 5
--ifn sayeh_PC.prj
+-ifn random_generator.prj

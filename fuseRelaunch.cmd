@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "D:/Ali Yazdi/Documents/GitHub/Architecture_Project/sayeh_PC_isim_beh.exe" -prj "D:/Ali Yazdi/Documents/GitHub/Architecture_Project/sayeh_PC_beh.prj" "work.sayeh_PC" 
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Windows 10/Documents/GitHub/Architecture_Project/rg_tb_isim_beh.exe" -prj "C:/Users/Windows 10/Documents/GitHub/Architecture_Project/rg_tb_beh.prj" "work.rg_tb" 
