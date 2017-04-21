@@ -1,6 +1,5 @@
-vhdl work "comprator1Bit.vhd"
-vhdl work "compratorNBits.vhd"
 vhdl work "two_complement.vhd"
 vhdl work "random_generator.vhd"
 vhdl work "comprator16Bits.vhd"
+vhdl work "ali16BFA.vhd"
 vhdl work "alu.vhd"

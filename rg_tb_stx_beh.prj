@@ -1,2 +1,0 @@
-vhdl isim_temp "random_generator.vhd"
-vhdl isim_temp "rg_tb.vhd"

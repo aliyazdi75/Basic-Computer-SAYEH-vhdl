@@ -1,13 +1,5 @@
 ISim log file
-<<<<<<< HEAD
-<<<<<<< HEAD
 Running: D:\Ali Yazdi\Documents\GitHub\Architecture_Project\stb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Ali Yazdi/Documents/GitHub/Architecture_Project/stb_isim_beh.wdb 
-=======
-Running: C:\Users\Windows 10\Documents\GitHub\Architecture_Project\tc_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Windows 10/Documents/GitHub/Architecture_Project/tc_tb_isim_beh.wdb 
->>>>>>> origin/master
-=======
-Running: C:\Users\Windows 10\Documents\GitHub\Architecture_Project\tc_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Windows 10/Documents/GitHub/Architecture_Project/tc_tb_isim_beh.wdb 
->>>>>>> origin/master
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
 Time resolution is 1 ps
@@ -15,8 +7,6 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-<<<<<<< HEAD
-<<<<<<< HEAD
 at 0 ps, Instance /stb/uut/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 0 ps, Instance /stb/uut/mydatapath/mregister_files/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 Finished circuit initialization process.
@@ -132,9 +122,3 @@ at 515 ns(1), Instance /stb/uut/mymem/ : Warning: NUMERIC_STD.TO_INTEGER: metava
 at 525 ns(1), Instance /stb/uut/mymem/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 585 ns(1), Instance /stb/uut/mymem/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 595 ns(1), Instance /stb/uut/mymem/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-=======
-Finished circuit initialization process.
->>>>>>> origin/master
-=======
-Finished circuit initialization process.
->>>>>>> origin/master

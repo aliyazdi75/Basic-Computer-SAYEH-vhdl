@@ -1,7 +1,7 @@
-set -tmpdir "C:/Users/Windows 10/Documents/GitHub/Architecture_Project/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/Windows 10/Documents/GitHub/Architecture_Project/xst"
+set -tmpdir "D:/Ali Yazdi/Documents/GitHub/Architecture_Project/xst/projnav.tmp"
+set -xsthdpdir "D:/Ali Yazdi/Documents/GitHub/Architecture_Project/xst"
 run -compileonly yes
--p xc7a100t-3-csg324
+-p xa7a100t-2I-csg324
 -top alu
 -opt_mode Speed
 -opt_level 1

@@ -19,15 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-<<<<<<< HEAD
 use IEEE.numeric_std.all;
-=======
-use ieee.std_logic_unsigned.all;
-use IEEE.NUMERIC_STD.ALL;
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
->>>>>>> origin/master
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -82,13 +74,6 @@ component comprator16Bits
            gta : out  STD_LOGIC);
 end component comprator16Bits;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-	signal co_add,co_sub,alu_cmp_eq, alu_cmp_gt, alu_cmp_lt : STD_LOGIC;
-	signal add, sub : STD_LOGIC_VECTOR (15 downto 0);
-=======
-=======
->>>>>>> origin/master
 component random_generator is
     Port ( A : in  STD_LOGIC_VECTOR (15 downto 0);
            B : in  STD_LOGIC_VECTOR (15 downto 0);
@@ -100,41 +85,22 @@ component two_complement is
            Output : out  STD_LOGIC_VECTOR (15 downto 0));
 end component two_complement;
 
-	signal alu_and, alu_or, alu_src, alu_slc, alu_cmp, alu_xor,alu_rand,alu_comp,alu_mul,alu_div : STD_LOGIC_VECTOR (15 downto 0);  
-	signal cout_add, cout_sub, alu_cmp_eq, alu_cmp_gt, alu_cmp_lt : STD_LOGIC;
-	signal add, sub : STD_LOGIC_VECTOR (16 downto 0);
->>>>>>> origin/master
-	
-
-	
+	signal co_add,co_sub,alu_cmp_eq, alu_cmp_gt, alu_cmp_lt : STD_LOGIC;
+	signal add, sub,alu_rand,alu_comp,alu_mul,alu_div : STD_LOGIC_VECTOR (15 downto 0);
 
 	
 begin
 	
 	cmp: comprator16Bits port map(a,b,'0','1','0',alu_cmp_lt,alu_cmp_eq,alu_cmp_gt);
-<<<<<<< HEAD
-<<<<<<< HEAD
    adder: ali16BFA port map (a,b,cin,co_add,add);
    subtractor: ali16BFA port map (a,not(b),cin,co_sub,sub);
-=======
-=======
->>>>>>> origin/master
-	
 	rand: random_generator port map(a,b,alu_rand); --not connected to alu_out!!!
 	complement: two_complement port map(b,alu_comp); --not connected to alu_out!!!
-
-	
-   add <= (('0' & a) + ('0' & b) + cin);
-   sub <= (('0' & a) - ('0' & b) - cin);
 	
 	alu_mul <= std_logic_vector(unsigned(a(7 downto 0)) * unsigned(b(7 downto 0))); --not connected to alu_out!!! 
 	alu_div <= std_logic_vector(unsigned(a) / unsigned(b));  --not connected to alu_out!!!
 	
 	
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
->>>>>>> origin/master
 	
 	SEQ: process(aandb,aorb,axorb,aaddb,asubb,amulb,acmpb,shrb,shlb,b15to0)
 	  begin
