@@ -20,6 +20,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use ieee.std_logic_unsigned.all;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -76,7 +77,7 @@ component two_complement is
            Output : out  STD_LOGIC_VECTOR (15 downto 0));
 end component two_complement;
 
-	signal alu_and, alu_or, alu_src, alu_slc, alu_cmp, alu_xor,alu_rand,alu_comp : STD_LOGIC_VECTOR (15 downto 0);  
+	signal alu_and, alu_or, alu_src, alu_slc, alu_cmp, alu_xor,alu_rand,alu_comp,alu_mul,alu_div : STD_LOGIC_VECTOR (15 downto 0);  
 	signal cout_add, cout_sub, alu_cmp_eq, alu_cmp_gt, alu_cmp_lt : STD_LOGIC;
 	signal add, sub : STD_LOGIC_VECTOR (16 downto 0);
 	
@@ -94,7 +95,12 @@ begin
 
 	
    add <= (('0' & a) + ('0' & b) + cin);
-   sub <= (('0' & a) - ('0' & b) + cin);
+   sub <= (('0' & a) - ('0' & b) - cin);
+	
+	alu_mul <= std_logic_vector(unsigned(a(7 downto 0)) * unsigned(b(7 downto 0))); --not connected to alu_out!!! 
+	alu_div <= std_logic_vector(unsigned(a) / unsigned(b));  --not connected to alu_out!!!
+	
+	
 	
 	SEQ: process(aandb,aorb,axorb,aaddb,asubb,amulb,acmpb,shrb,shlb,b15to0)
 	  begin
