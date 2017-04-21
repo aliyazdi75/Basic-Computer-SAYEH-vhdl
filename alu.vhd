@@ -93,7 +93,7 @@ begin
 	
 	cmp: comprator16Bits port map(a,b,'0','1','0',alu_cmp_lt,alu_cmp_eq,alu_cmp_gt);
    adder: ali16BFA port map (a,b,cin,co_add,add);
-   subtractor: ali16BFA port map (a,not(b),cin,co_sub,sub);
+   subtractor: ali16BFA port map (a,not(b),not(cin),co_sub,sub);
 	rand: random_generator port map(a,b,alu_rand); --not connected to alu_out!!!
 	complement: two_complement port map(b,alu_comp); --not connected to alu_out!!!
 	

@@ -161,6 +161,8 @@ begin
 			rside <= a;
 		elsif rs_on_adrs='1' then
 			rside <= b;
+		else
+			rside <= "ZZZZZZZZZZZZZZZZ";
 		end if;
 	end process;
 	

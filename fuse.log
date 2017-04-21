@@ -55,5 +55,5 @@ Time Resolution for simulation is 1ps.
 Waiting for 16 sub-compilation(s) to finish...
 Compiled 44 VHDL Units
 Built simulation executable D:/Ali Yazdi/Documents/GitHub/Architecture_Project/stb_isim_beh.exe
-Fuse Memory Usage: 36580 KB
-Fuse CPU Usage: 812 ms
+Fuse Memory Usage: 36908 KB
+Fuse CPU Usage: 827 ms
