@@ -9,7 +9,11 @@
 
 <messages>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd&quot; into library work</arg>
+=======
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Windows 10/Documents/GitHub/Architecture_Project/alu.vhd&quot; into library work</arg>
+>>>>>>> origin/master
 =======
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Windows 10/Documents/GitHub/Architecture_Project/alu.vhd&quot; into library work</arg>
 >>>>>>> origin/master

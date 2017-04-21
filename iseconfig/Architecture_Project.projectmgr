@@ -108,7 +108,11 @@
       </ClosedNodes>
       <SelectedItems>
 <<<<<<< HEAD
+<<<<<<< HEAD
          <SelectedItem>mcontroller - controller - Behavioral (D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd)</SelectedItem>
+=======
+         <SelectedItem>two_complement - Behavioral (C:/Users/Windows 10/Documents/GitHub/Architecture_Project/two_complement.vhd)</SelectedItem>
+>>>>>>> origin/master
 =======
          <SelectedItem>two_complement - Behavioral (C:/Users/Windows 10/Documents/GitHub/Architecture_Project/two_complement.vhd)</SelectedItem>
 >>>>>>> origin/master
@@ -118,7 +122,11 @@
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001bb000000020000000000000000000000000200000064ffffffff000000810000000300000002000001bb0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <CurrentItem>mcontroller - controller - Behavioral (D:/Ali Yazdi/Documents/GitHub/Architecture_Project/controller.vhd)</CurrentItem>
+=======
+      <CurrentItem>two_complement - Behavioral (C:/Users/Windows 10/Documents/GitHub/Architecture_Project/two_complement.vhd)</CurrentItem>
+>>>>>>> origin/master
 =======
       <CurrentItem>two_complement - Behavioral (C:/Users/Windows 10/Documents/GitHub/Architecture_Project/two_complement.vhd)</CurrentItem>
 >>>>>>> origin/master
@@ -143,7 +151,11 @@
       </ClosedNodes>
       <SelectedItems>
 <<<<<<< HEAD
+<<<<<<< HEAD
          <SelectedItem></SelectedItem>
+=======
+         <SelectedItem/>
+>>>>>>> origin/master
 =======
          <SelectedItem/>
 >>>>>>> origin/master
@@ -153,7 +165,11 @@
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <CurrentItem></CurrentItem>
+=======
+      <CurrentItem/>
+>>>>>>> origin/master
 =======
       <CurrentItem/>
 >>>>>>> origin/master

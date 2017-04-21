@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 work	"address_logic.vhd"
 work	"alu.vhd"
 work	"comprator16Bits.vhd"
@@ -13,6 +14,9 @@ work	"pc.vhd"
 work	"register_files.vhd"
 work	"sayeh_PC.vhd"
 work	"wp.vhd"
+=======
+work	"two_complement.vhd"
+>>>>>>> origin/master
 =======
 work	"two_complement.vhd"
 >>>>>>> origin/master

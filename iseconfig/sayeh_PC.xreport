@@ -2,6 +2,7 @@
 <report-views version="2.0" >
  <header>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <DateModified>2017-04-20T19:10:51</DateModified>
   <ModuleName>sayeh_PC</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
@@ -9,12 +10,17 @@
   <ImplementationReportsDirectory>D:/Ali Yazdi/Documents/GitHub/Architecture_Project\</ImplementationReportsDirectory>
   <DateInitialized>2017-04-20T03:29:44</DateInitialized>
 =======
+=======
+>>>>>>> origin/master
   <DateModified>2017-04-21T04:40:32</DateModified>
   <ModuleName>sayeh_PC</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Windows 10/Documents/GitHub/Architecture_Project/iseconfig/sayeh_PC.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/Windows 10/Documents/GitHub/Architecture_Project\</ImplementationReportsDirectory>
   <DateInitialized>2017-04-21T03:08:04</DateInitialized>
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

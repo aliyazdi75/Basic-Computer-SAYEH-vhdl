@@ -17,6 +17,7 @@
   <files>
     <file xil_pn:name="alu.vhd" xil_pn:type="FILE_VHDL">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="13"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="9"/>
     </file>
@@ -124,6 +125,60 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="sayeh_PC.vhd" xil_pn:type="FILE_VHDL">
+=======
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="6"/>
+    </file>
+    <file xil_pn:name="comprator1Bit.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="1"/>
+    </file>
+    <file xil_pn:name="compratorNBits.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="2"/>
+    </file>
+    <file xil_pn:name="comprator16Bits.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="5"/>
+    </file>
+    <file xil_pn:name="wp.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="ir.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="pc.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="address_logic.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="register_files.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="flags.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="datapath.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="memory.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="controller.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="sayeh_PC.vhd" xil_pn:type="FILE_VHDL">
+>>>>>>> origin/master
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
@@ -140,6 +195,7 @@
     <file xil_pn:name="two_complement.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="1"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="3"/>
+<<<<<<< HEAD
 >>>>>>> origin/master
     </file>
     <file xil_pn:name="stb.vhd" xil_pn:type="FILE_VHDL">
@@ -163,6 +219,8 @@
     <file xil_pn:name="ali16BFA.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="7"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="87"/>
+=======
+>>>>>>> origin/master
     </file>
   </files>
 
@@ -403,8 +461,13 @@
     <property xil_pn:name="Safe Implementation" xil_pn:value="No" xil_pn:valueState="default"/>
     <property xil_pn:name="Security" xil_pn:value="Enable Readback and Reconfiguration" xil_pn:valueState="default"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <property xil_pn:name="Selected Module Instance Name" xil_pn:value="/stb" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Selected Simulation Root Source Node Behavioral" xil_pn:value="work.stb" xil_pn:valueState="non-default"/>
+=======
+    <property xil_pn:name="Selected Module Instance Name" xil_pn:value="/two_complement" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Selected Simulation Root Source Node Behavioral" xil_pn:value="work.two_complement" xil_pn:valueState="non-default"/>
+>>>>>>> origin/master
 =======
     <property xil_pn:name="Selected Module Instance Name" xil_pn:value="/two_complement" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Selected Simulation Root Source Node Behavioral" xil_pn:value="work.two_complement" xil_pn:valueState="non-default"/>
@@ -426,7 +489,11 @@
     <property xil_pn:name="Slice Utilization Ratio" xil_pn:value="100" xil_pn:valueState="default"/>
     <property xil_pn:name="Specify 'define Macro Name and Value" xil_pn:value="" xil_pn:valueState="default"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <property xil_pn:name="Specify Top Level Instance Names Behavioral" xil_pn:value="work.stb" xil_pn:valueState="default"/>
+=======
+    <property xil_pn:name="Specify Top Level Instance Names Behavioral" xil_pn:value="work.two_complement" xil_pn:valueState="default"/>
+>>>>>>> origin/master
 =======
     <property xil_pn:name="Specify Top Level Instance Names Behavioral" xil_pn:value="work.two_complement" xil_pn:valueState="default"/>
 >>>>>>> origin/master
@@ -483,7 +550,11 @@
     <!-- The following properties are for internal use only. These should not be modified.-->
     <!--                                                                                  -->
 <<<<<<< HEAD
+<<<<<<< HEAD
     <property xil_pn:name="PROP_BehavioralSimTop" xil_pn:value="Architecture|stb|behavior" xil_pn:valueState="non-default"/>
+=======
+    <property xil_pn:name="PROP_BehavioralSimTop" xil_pn:value="Architecture|tc_tb|behavior" xil_pn:valueState="non-default"/>
+>>>>>>> origin/master
 =======
     <property xil_pn:name="PROP_BehavioralSimTop" xil_pn:value="Architecture|tc_tb|behavior" xil_pn:valueState="non-default"/>
 >>>>>>> origin/master
