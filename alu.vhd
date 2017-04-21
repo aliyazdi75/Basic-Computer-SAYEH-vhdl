@@ -91,7 +91,7 @@ begin
 	cmp: comprator16Bits port map(a,b,'0','1','0',alu_cmp_lt,alu_cmp_eq,alu_cmp_gt);
 	
 	rand: random_generator port map(a,b,alu_rand); --not connected to alu_out!!!
-	complement: two_complement port map(a,alu_comp); --not connected to alu_out!!!
+	complement: two_complement port map(b,alu_comp); --not connected to alu_out!!!
 
 	
    add <= (('0' & a) + ('0' & b) + cin);
