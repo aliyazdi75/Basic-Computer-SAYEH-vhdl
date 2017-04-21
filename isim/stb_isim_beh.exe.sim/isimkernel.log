@@ -1,0 +1,28 @@
+Command line:
+   stb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  14009
+
+Fri Apr 21 13:03:30 2017
+
+
+ Elaboration Time: 0.859375 sec
+
+ Current Memory Usage: 1372.06 Meg
+
+ Total Signals          : 954
+ Total Nets             : 1509
+ Total Signal Drivers   : 278
+ Total Blocks           : 154
+ Total Primitive Blocks : 90
+ Total Processes        : 239
+ Total Traceable Variables  : 32
+ Total Scalar Nets and Variables : 2011
+
+ Total Simulation Time: 2.65625 sec
+
+ Current Memory Usage: 428.306 Meg
+
+Fri Apr 21 13:44:28 2017
+

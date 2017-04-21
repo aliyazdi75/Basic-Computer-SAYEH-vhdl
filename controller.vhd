@@ -115,52 +115,53 @@ begin
 	begin
 		case current_state is
 		 when Sreset =>
-			reset_pc <= '1';
-			pc_plus1 <= '0';
-			pc_plusi <= '0';
-			r0_plusi <= '0';
-			r0_plus0 <= '0';
-			b15to0 <= '0';
-			aandb <= '0';
-			aorb <= '0';
-			axorb <= '0';
-			notb <= '0';
-			aaddb <= '0';
-			asubb <= '0';
-			amulb <= '0';
-			acmpb <= '0';
-			shrb <= '0';
-			shlb <= '0';
-			alu_out_on_databus <= '0';
-			cset <= '0';
-			creset <= '0';
-			zset <= '0';
-			zreset <= '0';
-			sr_load <= '0';
-			ir_load <= '0';
-			pc_load <= '0';
-			rfl_write <= '0';
-			rfh_write <= '0';
-			wpadd <= '0';
-			wpreset <= '1';
-			  adrs_on_daabus <= '0';
-			  rd_on_adrs <= '0';
-			  rs_on_adrs <= '0';
-			  read_mem <= '0';
-			  write_mem <= '0';
-			  next_state <= Sfetch1;
+				reset_pc <= '1';
+				pc_plus1 <= '0';
+				pc_plusi <= '0';
+				r0_plusi <= '0';
+				r0_plus0 <= '0';
+				b15to0 <= '0';
+				aandb <= '0';
+				aorb <= '0';
+				axorb <= '0';
+				notb <= '0';
+				aaddb <= '0';
+				asubb <= '0';
+				amulb <= '0';
+				acmpb <= '0';
+				shrb <= '0';
+				shlb <= '0';
+				alu_out_on_databus <= '0';
+				cset <= '0';
+				creset <= '0';
+				zset <= '0';
+				zreset <= '0';
+				sr_load <= '0';
+				ir_load <= '0';
+				pc_load <= '0';
+				rfl_write <= '0';
+				rfh_write <= '0';
+				wpadd <= '0';
+				wpreset <= '1';
+				adrs_on_daabus <= '0';
+				rd_on_adrs <= '0';
+				rs_on_adrs <= '0';
+				read_mem <= '0';
+				write_mem <= '0';
+			    next_state <= Sfetch1;
 			when Sfetch1 =>
-            	pc_plus1 <= '0';
-            	pc_load <= '0';
+            	pc_load <= '1';
 				read_mem <= '1';
 			    reset_pc <= '0';
             	wpreset <= '0';
 				next_state <= Sfetch2;		
 			when Sfetch2 =>
-				read_mem <= '0';
+            	pc_plus1 <= '0';
+            	pc_load <= '0';
            	 	ir_load <= '1';
 				next_state <= Sdecode;
 			when Sdecode =>
+					read_mem <= '0';
             	ir_load <= '0';
 				if ir_out (15 downto 8) = "00000000" then
 					next_state <= Snop;
@@ -217,7 +218,7 @@ begin
 				end if;
 			when Snop =>
             	pc_plus1 <= '1';
-            	pc_load <= '1';
+            	
 				next_state <= Sfetch1;
 			when Shlt =>
 				next_state <= Shlt;
@@ -227,7 +228,7 @@ begin
 			when Sszf2 =>
             	zset <= '0';
             	pc_plus1 <= '1';
-            	pc_load <= '1';
+            	
 				next_state <= Sfetch1;
 			when Sczf1 =>
             	zreset <= '1';
@@ -235,7 +236,7 @@ begin
 			when Sczf2 =>
 				zreset <= '0';
             	pc_plus1 <= '1';
-            	pc_load <= '1';
+            	
 				next_state <= Sfetch1;
 			when Sscf1 =>
             	cset <= '1';
@@ -243,7 +244,7 @@ begin
 			when Sscf2 =>
 				cset <= '0';
             	pc_plus1 <= '1';
-            	pc_load <= '1';
+            	
 				next_state <= Sfetch1;
 			when Sccf1 =>
             	creset <= '1';
@@ -251,7 +252,7 @@ begin
 			when Sccf2 =>
 				creset <= '0';
             	pc_plus1 <= '1';
-            	pc_load <= '1';
+            	
 				next_state <= Sfetch1;
 			when Scwp1 =>
             	wpreset <= '1';
@@ -259,7 +260,7 @@ begin
 			when Scwp2 =>
 				wpreset <= '0';
             	pc_plus1 <= '1';
-            	pc_load <= '1';
+            	
 				next_state <= Sfetch1;
 			when Smvr1 =>
             	b15to0 <= '1';
@@ -276,7 +277,7 @@ begin
             	rfh_write <= '0';
             	rfl_write <= '0';
             	pc_plus1 <= '1';
-            	pc_load <= '1';
+            	
 				alu_out_on_databus <= '0';
 				next_state <= Sfetch1;
 			when Slda1 =>
@@ -300,7 +301,7 @@ begin
             	rfl_write <= '0';			
 				alu_out_on_databus <= '0';
             	pc_plus1 <= '1';
-            	pc_load <= '1';
+            	
 				next_state <= Sfetch1;
 			when Ssta1 =>
             	b15to0 <= '1';
@@ -320,7 +321,7 @@ begin
 				write_mem <= '0';
 				alu_out_on_databus <= '0';
             	pc_plus1 <= '1';
-            	pc_load <= '1';
+            	
 				next_state <= Sfetch1;
 			when Sand1 =>
             	aandb <= '1';
@@ -337,7 +338,7 @@ begin
             	rfh_write <= '0';
             	rfl_write <= '0';
             	pc_plus1 <= '1';
-            	pc_load <= '1';
+            	
 				alu_out_on_databus <= '0';
 				next_state <= Sfetch1;
 			when Sor1 =>
@@ -355,7 +356,7 @@ begin
             	rfh_write <= '0';
             	rfl_write <= '0';
             	pc_plus1 <= '1';
-            	pc_load <= '1';
+            	
 				alu_out_on_databus <= '0';
 				next_state <= Sfetch1;
 			when Snot1 =>
@@ -373,7 +374,7 @@ begin
             	rfh_write <= '0';
             	rfl_write <= '0';
             	pc_plus1 <= '1';
-            	pc_load <= '1';
+            	
 				alu_out_on_databus <= '0';
 				next_state <= Sfetch1;
 			when Sshl1 =>
@@ -391,7 +392,7 @@ begin
             	rfh_write <= '0';
             	rfl_write <= '0';
             	pc_plus1 <= '1';
-            	pc_load <= '1';
+            	
 				alu_out_on_databus <= '0';
 				next_state <= Sfetch1;
 			when Sshr1 =>
@@ -409,43 +410,43 @@ begin
             	rfh_write <= '0';
             	rfl_write <= '0';
             	pc_plus1 <= '1';
-            	pc_load <= '1';
+            	
 				alu_out_on_databus <= '0';
 				next_state <= Sfetch1;
 			when Sadd1 =>
-            	aaddb <= '1';
-				next_state <= Sadd2;
-			when Sadd2 =>
-				alu_out_on_databus <= '1';
-				next_state <= Sadd3;
-			when Sadd3 =>
             	rfh_write <= '1';
             	rfl_write <= '1';
-            	aaddb <= '0';
+				next_state <= Sadd2;
+			when Sadd2 =>
+            	aaddb <= '1';
+				next_state <= Sadd3;
+			when Sadd3 =>
+					alu_out_on_databus <= '1';
 				next_state <= Sadd4;
 			when Sadd4 =>
+            	aaddb <= '0';
             	rfh_write <= '0';
             	rfl_write <= '0';
             	pc_plus1 <= '1';
-            	pc_load <= '1';
+            	
 				alu_out_on_databus <= '0';
 				next_state <= Sfetch1;
 			when Ssub1 =>
-            	asubb <= '1';
-				next_state <= Ssub2;
-			when Ssub2 =>
-				alu_out_on_databus <= '1';
-				next_state <= Ssub3;
-			when Ssub3 =>
             	rfh_write <= '1';
             	rfl_write <= '1';
-            	asubb <= '0';
+				next_state <= Ssub2;
+			when Ssub2 =>
+            	asubb <= '1';
+				next_state <= Ssub3;
+			when Ssub3 =>
+				alu_out_on_databus <= '1';
 				next_state <= Ssub4;
 			when Ssub4 =>
+            	asubb <= '0';
             	rfh_write <= '0';
             	rfl_write <= '0';
             	pc_plus1 <= '1';
-            	pc_load <= '1';
+            	
 				alu_out_on_databus <= '0';
 				next_state <= Sfetch1;
 			when Scmp1 =>
@@ -463,7 +464,7 @@ begin
             	rfh_write <= '0';
             	rfl_write <= '0';
             	pc_plus1 <= '1';
-            	pc_load <= '1';
+            	
 				alu_out_on_databus <= '0';
 				next_state <= Sfetch1;
 			when Smil1 =>
@@ -472,7 +473,7 @@ begin
 			when Smil2 =>
             	rfl_write <= '0';
             	pc_plus1 <= '1';
-            	pc_load <= '1';
+            	
 				next_state <= Sfetch1;
 			when Smih1 =>
             	rfh_write <= '1';
@@ -480,7 +481,7 @@ begin
 			when Smih2 =>
             	rfh_write <= '0';
             	pc_plus1 <= '1';
-            	pc_load <= '1';
+            	
 				next_state <= Sfetch1;
 			when Sspc1 =>
             	pc_plusi <= '1';
@@ -497,7 +498,7 @@ begin
             	rfh_write <= '0';
             	rfl_write <= '0';
             	pc_plus1 <= '1';
-            	pc_load <= '1';
+            	
 				adrs_on_daabus <= '0';
 				next_state <= Sfetch1;
 			when Sjpa1 =>
@@ -508,39 +509,39 @@ begin
 				next_state <= Sjpa3;
 			when Sjpa3 =>
 				r0_plusi <= '0';
-            	pc_load <= '1';
+            	
             	rd_on_adrs <= '0';
 				next_state <= Sfetch1;
 			when Sjpr1 =>
             	pc_plusi <= '1';
-            	pc_load <= '1';
+            	
 				next_state <= Sjpr2;
 			when Sjpr2 =>
 				pc_plusi <= '0';
 				next_state <= Sfetch1;
 			when Sbrz1 =>
-					if zout='1' then
-						pc_plusi <= '1';
-            			pc_load <= '1';
-						next_state <= Sbrz2;
-					else
-						pc_plus1 <= '1';
-						pc_load <= '1';
-						next_state <= Sfetch1;
-					end if;
+				if zout='1' then
+					pc_plusi <= '1';
+            		
+					next_state <= Sbrz2;
+				else
+					pc_plus1 <= '1';
+					
+					next_state <= Sfetch1;
+				end if;
 			when Sbrz2 =>
 				pc_plusi <= '0';
 				next_state <= Sfetch1;
 			when Sbrc1 =>
-					if cout='1' then
-						pc_plusi <= '1';
-            			pc_load <= '1';
-						next_state <= Sbrc2;
-					else 
-						pc_plus1 <= '1';
-						pc_load <= '1';
-						next_state <= Sfetch1;
-					end if;
+				if cout='1' then
+					pc_plusi <= '1';
+            		
+					next_state <= Sbrc2;
+				else 
+					pc_plus1 <= '1';
+					
+					next_state <= Sfetch1;
+				end if;
 			when Sbrc2 =>
 				pc_plusi <= '0';
 				next_state <= Sfetch1;
@@ -550,7 +551,7 @@ begin
 			when Sawp2 =>
             	wpadd <= '1';
 				pc_plus1 <= '1';
-				pc_load <= '1';
+				
 				next_state <= Sfetch1;
 
 		end case;

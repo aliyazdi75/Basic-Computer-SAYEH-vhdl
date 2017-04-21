@@ -41,7 +41,7 @@ component datapath
            pc_plusi : in  STD_LOGIC;
            r0_plusi : in  STD_LOGIC;
            r0_plus0 : in  STD_LOGIC;
-		     b15to0 : in  STD_LOGIC;
+		   b15to0 : in  STD_LOGIC;
            aandb : in  STD_LOGIC;
            aorb : in  STD_LOGIC;
            axorb : in  STD_LOGIC;
@@ -52,7 +52,7 @@ component datapath
            acmpb : in  STD_LOGIC;
            shrb : in  STD_LOGIC;
            shlb : in  STD_LOGIC;
-		     alu_out_on_databus : in  STD_LOGIC;
+		   alu_out_on_databus : in  STD_LOGIC;
            cset : in  STD_LOGIC;
            creset : in  STD_LOGIC;
            zset : in  STD_LOGIC;
@@ -64,13 +64,14 @@ component datapath
            rfh_write : in  STD_LOGIC;
            wpadd : in  STD_LOGIC;
            wpreset : in  STD_LOGIC;
-			  adrs_on_daabus : in STD_LOGIC;
-			  rd_on_adrs : in  STD_LOGIC;
-			  rs_on_adrs : in  STD_LOGIC;
-			  cout : out  STD_LOGIC;
-			  zout : out  STD_LOGIC;
-			  adrs_to_mem : out STD_LOGIC_VECTOR (15 downto 0);
-			  databus : inout STD_LOGIC_VECTOR (15 downto 0);
+		   adrs_on_daabus : in STD_LOGIC;
+		   rd_on_adrs : in  STD_LOGIC;
+		   rs_on_adrs : in  STD_LOGIC;
+		   cout : out  STD_LOGIC;
+		   zout : out  STD_LOGIC;
+		   adrs_to_mem : out STD_LOGIC_VECTOR (15 downto 0);
+		   databus : inout STD_LOGIC_VECTOR (15 downto 0);
+			ir_out : inout STD_LOGIC_VECTOR (15 downto 0);
            clk : in  STD_LOGIC);
 end component;
 component controller
@@ -79,12 +80,12 @@ component controller
            zout : in  STD_LOGIC;
            cout : in  STD_LOGIC;
            clk : in  STD_LOGIC;
-			  reset_pc : out STD_LOGIC;
+		   reset_pc : out STD_LOGIC;
            pc_plus1 : out STD_LOGIC;
            pc_plusi : out STD_LOGIC;
            r0_plusi : out STD_LOGIC;
            r0_plus0 : out STD_LOGIC;
-			  b15to0 : out STD_LOGIC;
+		   b15to0 : out STD_LOGIC;
            aandb : out STD_LOGIC;
            aorb : out STD_LOGIC;
            axorb : out STD_LOGIC;
@@ -95,7 +96,7 @@ component controller
            acmpb : out STD_LOGIC;
            shrb : out STD_LOGIC;
            shlb : out STD_LOGIC;
-			  alu_out_on_databus : out STD_LOGIC;
+		   alu_out_on_databus : out STD_LOGIC;
            cset : out STD_LOGIC;
            creset : out STD_LOGIC;
            zset : out STD_LOGIC;
@@ -107,11 +108,11 @@ component controller
            rfh_write : out STD_LOGIC;
            wpadd : out STD_LOGIC;
            wpreset : out STD_LOGIC;
-			  adrs_on_daabus : out STD_LOGIC;
-			  rd_on_adrs : out STD_LOGIC;
-			  rs_on_adrs : out STD_LOGIC;
-			  read_mem : out STD_LOGIC;
-			  write_mem : out STD_LOGIC);
+		   adrs_on_daabus : out STD_LOGIC;
+		   rd_on_adrs : out STD_LOGIC;
+		   rs_on_adrs : out STD_LOGIC;
+		   read_mem : out STD_LOGIC;
+		   write_mem : out STD_LOGIC);
 end component;
 component memory is
 	generic (blocksize : integer := 1024);
@@ -201,6 +202,7 @@ begin
                                     zout,
                                     adrs_to_mem,
                                     databus,
+												ir_out,
                                     clk);
     mymem: memory port map(         clk,
                                     read_mem,

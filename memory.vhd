@@ -26,8 +26,46 @@ begin
 		variable init : boolean := true;
 	begin
 		if init = true then
-			-- some initiation
-			buffermem(0) := "0000000000000000";
+					
+				--cwp
+				buffermem(0) := "0000011000000000";
+
+				--mil r0, 01011101
+				buffermem(1) := "1111000001011101";
+
+				--mih r0, 00000101
+				buffermem(2) := "1111000100000101";
+
+				--mil r1, 00000001
+				buffermem(3) := "1111010000000001";
+
+				--mih r1, 00000000
+				buffermem(4) := "1111010100000000";
+
+				--lda
+				buffermem(5):=  "0010010000000000";
+				
+				--sta
+				buffermem(6):=  "0011000100000000";
+
+				--szf scf
+				buffermem(7):=  "0000001000000100";
+
+				--szf czf
+				buffermem(8):=  "0000001100000101";
+
+				--nop  - mvr r0,r1
+				buffermem(9):=  "0000000000010001";
+
+				--spc r1 , 0000100
+				buffermem(10):= "1111011000001000";
+
+				--add r1, r0
+				buffermem(11) := "1011010000000000";
+				
+				--sub r1, r0
+				buffermem(12) := "1100010000000000";
+				
 			init := false;
 		end if;
 
