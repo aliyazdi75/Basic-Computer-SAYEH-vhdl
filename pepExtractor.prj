@@ -1,0 +1,18 @@
+<<<<<<< HEAD
+work	"address_logic.vhd"
+work	"alu.vhd"
+work	"comprator16Bits.vhd"
+work	"comprator1Bit.vhd"
+work	"compratorNBits.vhd"
+work	"controller.vhd"
+work	"datapath.vhd"
+work	"flags.vhd"
+work	"ir.vhd"
+work	"memory.vhd"
+work	"pc.vhd"
+work	"register_files.vhd"
+work	"sayeh_PC.vhd"
+work	"wp.vhd"
+=======
+work	"two_complement.vhd"
+>>>>>>> origin/master
